@@ -1,325 +1,391 @@
-<style>
+<html>
+<head>
+  <title>Thefacebook | Welcome to Thefacebook!</title>
+  <style>
+    .title {
+      color: #000000;
+      font-Family: Tahoma, Arial, Helvetica, sans-serif;
+      font-size: 18px;
+      font-weight: bold;
+      text-decoration: none;
+    }
 
-  .title {
-    color:#000000;
-    font-Family: Tahoma, Arial, Helvetica, sans-serif;
-    font-size: 18px;
-    font-weight: bold;
-    text-decoration:none;
-  }
-  
-  .larger {
-    color:#000000;
-    font-Family: Tahoma, Arial, Helvetica, sans-serif;
-    font-size: 13px;
-    font-weight: none;
-    text-decoration:none;
-  }
+    .larger {
+      color: #000000;
+      font-Family: Tahoma, Arial, Helvetica, sans-serif;
+      font-size: 13px;
+      font-weight: none;
+      text-decoration: none;
+    }
 
-  .larger-a {
-    //color:#D19160;
-    color:#538ADC;
-    font-Family: Tahoma, Arial, Helvetica, sans-serif;
-    font-size: 13px;
-    font-weight: none;
-    text-decoration:none;
-  }
+    .larger-a {
+      //color:#D19160;
+      color: #538ADC;
+      font-Family: Tahoma, Arial, Helvetica, sans-serif;
+      font-size: 13px;
+      font-weight: none;
+      text-decoration: none;
+    }
 
-  .larger-a:hover {
-    //color:#FF0000;
-    color:#77C9F3;
-    font-Family: Tahoma, Arial, Helvetica, sans-serif;
-    font-size: 13px;
-    font-weight: none;
-    text-decoration:underline;
-  }
-  
-  select {
-    font-family: Tahoma;
-    font-size: 11px;
-  }
-   
-  .white {
-    color:#FFFFFF;
-    font-Family: Tahoma, Arial, Helvetica, sans-serif;
-    font-size: 12px;
-    font-weight: none;
-    text-decoration:none;
-  }
+    .larger-a:hover {
+      //color:#FF0000;
+      color: #77C9F3;
+      font-Family: Tahoma, Arial, Helvetica, sans-serif;
+      font-size: 13px;
+      font-weight: none;
+      text-decoration: underline;
+    }
 
-  .blue {
-    color:#3B5998;
-    font-Family: Tahoma, Arial, Helvetica, sans-serif;
-    font-size: 12px;
-    font-weight: none;
-    text-decoration:none;
-  } 
-  
-  .red {
-    color:#FF0000;
-    font-Family: Tahoma, Arial, Helvetica, sans-serif;
-    font-size: 11px;
-    font-weight: none;
-    text-decoration:none;
-  }
+    select {
+      font-family: Tahoma;
+      font-size: 11px;
+    }
 
-  .menu {
-    color:#FFFFFF;
-    font-Family: Tahoma, Arial, Helvetica, sans-serif;
-    font-size: 11px;
-    font-weight: none;
-    text-decoration:none;
-  }
+    .white {
+      color: #FFFFFF;
+      font-Family: Tahoma, Arial, Helvetica, sans-serif;
+      font-size: 12px;
+      font-weight: none;
+      text-decoration: none;
+    }
 
-  .menu:hover {
-    color:#77C9F3;
-    font-Family: Tahoma, Arial, Helvetica, sans-serif;
-    font-size: 11px;
-    font-weight: none;
-    text-decoration:none;
-  }
+    .blue {
+      color: #3B5998;
+      font-Family: Tahoma, Arial, Helvetica, sans-serif;
+      font-size: 12px;
+      font-weight: none;
+      text-decoration: none;
+    }
 
-  .alternate {
-    color:#3B5998;
-    font-Family: Tahoma, Arial, Helvetica, sans-serif;
-    font-size: 11px;
-    font-weight: none;
-    text-decoration:none;
-  }
+    .red {
+      color: #FF0000;
+      font-Family: Tahoma, Arial, Helvetica, sans-serif;
+      font-size: 11px;
+      font-weight: none;
+      text-decoration: none;
+    }
 
-  .alternate:hover {
-    color:#000000;
-    font-Family: Tahoma, Arial, Helvetica, sans-serif;
-    font-size: 11px;
-    font-weight: none;
-    text-decoration:underline;
-  }
-  
-  a {
-    //color:#D19160;
-    color:#538ADC;
-    font-Family: Tahoma, Arial, Helvetica, sans-serif;
-    font-size: 11px;
-    font-weight: none;
-    text-decoration:none;
-  }
-  
-  a:hover {
-    //color:#FF0000;
-    color:#77C9F3;
-    font-Family: Tahoma, Arial, Helvetica, sans-serif;
-    font-size: 11px;
-    font-weight: none;
-    text-decoration:underline;
-  }
+    .menu {
+      color: #FFFFFF;
+      font-Family: Tahoma, Arial, Helvetica, sans-serif;
+      font-size: 11px;
+      font-weight: none;
+      text-decoration: none;
+    }
 
-  .bordertable {
-    border-width: 1px;
-    border-color: #3B5998;
-    border-style: solid;
-  }
+    .menu:hover {
+      color: #77C9F3;
+      font-Family: Tahoma, Arial, Helvetica, sans-serif;
+      font-size: 11px;
+      font-weight: none;
+      text-decoration: none;
+    }
 
-  .dashedtable {
-    border-width: 1px;
-    border-color: #3B5998;
-    border-style: dashed;
-  }
+    .alternate {
+      color: #3B5998;
+      font-Family: Tahoma, Arial, Helvetica, sans-serif;
+      font-size: 11px;
+      font-weight: none;
+      text-decoration: none;
+    }
 
-  .bottomborder {
-    border-style:solid;
-    border-color: #3B5998;
-    border-top-width:0px;
-    border-bottom-width:1px;
-    border-right-width:0px;
-    border-left-width:0px;
-  }
+    .alternate:hover {
+      color: #000000;
+      font-Family: Tahoma, Arial, Helvetica, sans-serif;
+      font-size: 11px;
+      font-weight: none;
+      text-decoration: underline;
+    }
 
-  .one-column {
-    color:#000000;
-    font-Family: Tahoma, Arial, Helvetica, sans-serif;
-    font-size: 11px;
-    font-weight: none;
-    text-decoration:none;
-    border-style:solid;
-    border-color: #3B5998;
-    border-top-width:1px;
-    border-bottom-width:0px;
-    border-right-width:1px;
-    border-left-width:1px;
-  }
+    a {
+      //color:#D19160;
+      color: #538ADC;
+      font-Family: Tahoma, Arial, Helvetica, sans-serif;
+      font-size: 11px;
+      font-weight: none;
+      text-decoration: none;
+    }
 
-  .text {
-    font-Family: Serif;
-    font-size: 11px;
-    font-weight: none;
-    text-decoration:none;
-  }
-  
-  .td0 {
-    color:#000000;
-    background-color:#D9DFEA;
-    border: 0;
-    font-Family: Tahoma, Arial, Helvetica, sans-serif;
-    font-size: 11px;
-    font-weight: none;
-    text-decoration:none;
-  }
+    a:hover {
+      //color:#FF0000;
+      color: #77C9F3;
+      font-Family: Tahoma, Arial, Helvetica, sans-serif;
+      font-size: 11px;
+      font-weight: none;
+      text-decoration: underline;
+    }
 
-  .td1 {
-    color:#000000;
-    background-color:#86A1CE;
-    border: 0;
-    font-Family: Tahoma, Arial, Helvetica, sans-serif;
-    font-size: 11px;
-    font-weight: none;
-    text-decoration:none;
-  }    
+    .bordertable {
+      border-width: 1px;
+      border-color: #3B5998;
+      border-style: solid;
+    }
 
-  .schedule_table {
-    border-right-width: 0px;
-    border-bottom-width: 0px;
-    border-left-width: 1px;
-    border-top-width: 1px;
-    border-style: solid;
-    border-color: #000000;
-  }
+    .dashedtable {
+      border-width: 1px;
+      border-color: #3B5998;
+      border-style: dashed;
+    }
 
-  .top-border {
-    border-right-width: 0px;
-    border-bottom-width: 0px;
-    border-left-width: 0px;
-    border-top-width: 1px;
-    border-style: solid;
-    border-color: #3B5998;
-  }
-  
-  .schedule {
-    color:#000000;
-    border-right-width: 1px;
-    border-bottom-width: 1px;
-    border-left-width: 0px;
-    border-top-width: 0px;
-    border-style: solid;
-    border-color:#000000;
-    font-Family: Tahoma, Arial, Helvetica, sans-serif;
-    font-size: 11px;
-    font-weight: none;
-    text-decoration:none;
-  }
+    .bottomborder {
+      border-style: solid;
+      border-color: #3B5998;
+      border-top-width: 0px;
+      border-bottom-width: 1px;
+      border-right-width: 0px;
+      border-left-width: 0px;
+    }
 
-  .border-td {
-    color:#000000;
-    border-right-width: 1px;
-    border-bottom-width: 1px;
-    border-left-width: 1px;
-    border-top-width: 1px;
-    border-style: solid;
-    border-color:#3B5998;
-    font-Family: Tahoma, Arial, Helvetica, sans-serif;
-    font-size: 11px;
-    font-weight: none;
-    text-decoration:none;
-  }
-  
-  td {
-    color:#000000;
-    border: 0;
-    font-Family: Tahoma, Arial, Helvetica, sans-serif;
-    font-size: 11px;
-    font-weight: none;
-    text-decoration:none;
-  }
-  
-  .inputtext {
-    border:double;
-    border-width:1;
-    border-color:#555555;
-    background-color:#D9DFEA;
-    font-size:11px;
-    color: #000000;
-    font-Family: Tahoma, Arial, Helvetica, sans-serif;
-  }
-  
-  .inputsubmit {
-    border-style:solid;
-    border-top-width:1px;
-    border-bottom-width:2px;
-    border-right-width:2px;
-    border-left-width:1px;
-    border-top-color:#D9DFEA;
-    border-bottom-color:#3B5998;
-    border-right-color:#3B5998;
-    border-left-color:#D9DFEA;
-    background-color:#538ADC;
-    font-family:Tahoma, arial;
-    font-size:11px;
-    color:#FFFFFF;
-    font-weight:none;
-  }
+    .one-column {
+      color: #000000;
+      font-Family: Tahoma, Arial, Helvetica, sans-serif;
+      font-size: 11px;
+      font-weight: none;
+      text-decoration: none;
+      border-style: solid;
+      border-color: #3B5998;
+      border-top-width: 1px;
+      border-bottom-width: 0px;
+      border-right-width: 1px;
+      border-left-width: 1px;
+    }
 
-  <!--
-  #8EA7C5 - blue
-  #D9DFEA - grey
-  59 89 152                (#3B5998)
-  217 223 234              (#D9DFEA)
-  83 138 220 - link normal (#538ADC)
-  119 201 243 - link down  (#77C9F3)
-  -->
-  
-</style><title>Thefacebook | Welcome to Thefacebook!</title>
+    .text {
+      font-Family: Serif;
+      font-size: 11px;
+      font-weight: none;
+      text-decoration: none;
+    }
 
- <center>
-<table class="bordertable" cellspacing="0" cellpadding="0" border="0" width="700">
-  <tr><td>
-      <table class="bottomborder" cellspacing="0" cellpadding="0" border="0" width="100%">
-      <tr><td width="350" bgcolor="#3B5998">
-          <img src="images/logo-left.jpg"></td>
-          <td><table cellspacing="0" cellpadding="0" border="0" width="100%"><tr><td>
-          <table cellspacing="0" cellpadding="0" border="0" width="100%">
-          <tr><td><a href="index.php?PHPSESSID=df5154e5899f1296c2dceec9f0f542a0"><img src="images/logo-right.jpg" border="0"></a></td>
-          <td width="100%" bgcolor="#3B5998">&nbsp;</td></tr></table></td></tr>
-          <tr><td><table cellspacing="0" cellpadding="4" border="0" width="100%"><tr height="21">
-          <!--<td bgcolor=#3B5998 width=10>&nbsp;</td>-->
-                    <td bgcolor="#3B5998" valign="bottom">&nbsp;<a class="menu" href="login.php?PHPSESSID=df5154e5899f1296c2dceec9f0f542a0">login</a></td>
-          <td bgcolor="#3B5998" valign="bottom">&nbsp;<a class="menu" href="register.php?PHPSESSID=df5154e5899f1296c2dceec9f0f542a0">register</a></td>
-          <td bgcolor="#3B5998" valign="bottom">&nbsp;<a class="menu" href="about.php?PHPSESSID=df5154e5899f1296c2dceec9f0f542a0">about</a></td>
-                    <td bgcolor="#3B5998" width="100%">&nbsp;</td>
-          </tr></table></td>
-          </tr></table>
-      </td></tr></table>
-  </td></tr>
-  <tr><td><table cellspacing="0" cellpadding="2" border="0" width="100%">
-      <tr><td valign="top">
-      <table cellspacing="0" cellpadding="0" border="0" width="105">
-        <tr><td>
-                            <table class="dashedtable" cellspacing="0" cellpadding="2" width="100%">
-              <tr><td align="right">
-                  <p>
-                  <form method="post" action="login.php"><input type="hidden" name="PHPSESSID" value="df5154e5899f1296c2dceec9f0f542a0"/>
-                  Email:<br>
-                  <input type="text" class="inputtext" name="email" size="20"><br>
-                  Password:<br>
-                  <input type="password" class="inputtext" name="pass" size="20"><br>
-                  <center><input type="button" class="inputsubmit" value="register" onclick="javascript:document.location='register.php';">
-                          &nbsp;<input type="submit" class="inputsubmit" value="login"></center>
-                  </form>
-                  <!--<br>-->
-              </td></tr></table>
-                      </td></tr>
-      </table>
-      </td><td width="595" valign="top">
-        <table class="bordertable" cellspacing="0" cellpadding="0" border="1" width="100%"><tr><td>
+    .td0 {
+      color: #000000;
+      background-color: #D9DFEA;
+      border: 0;
+      font-Family: Tahoma, Arial, Helvetica, sans-serif;
+      font-size: 11px;
+      font-weight: none;
+      text-decoration: none;
+    }
 
-<table cellspacing="0" cellpadding="2" border="0" width="100%">
-<tr><td class="white" bgcolor="#3B5998">Welcome to Thefacebook!</td></tr></table><center><p class="title">[ Welcome to Thefacebook ]<br>&nbsp;<table cellspacing="0" cellpadding="0" border="0" width="95%"><tr><td class="larger">Thefacebook is an online directory that connects people through social networks at colleges.<p>We have opened up Thefacebook for popular consumption at <b>Harvard University</b>.<p>You can use Thefacebook to:<br>&nbsp;<b>&#8226;</b>&nbsp; Search for people at your school<br>&nbsp;<b>&#8226;</b>&nbsp; Find out who are in your classes<br>&nbsp;<b>&#8226;</b>&nbsp; Look up your friends' friends<br>&nbsp;<b>&#8226;</b>&nbsp; See a visualization of your social network<p>To get started, click below to register.  If you have already registered, you can log in.<center><input class="inputsubmit" type="button" value="Register" onclick="javascript:document.location=&quot;register.php&quot;;">&nbsp;&nbsp;<input class="inputsubmit" type="button" value=" Login " onclick="javascript:document.location=&quot;login.php&quot;;"><br>&nbsp;</td></tr></table>  </td></tr></table>
-  </td></tr></table>
+    .td1 {
+      color: #000000;
+      background-color: #86A1CE;
+      border: 0;
+      font-Family: Tahoma, Arial, Helvetica, sans-serif;
+      font-size: 11px;
+      font-weight: none;
+      text-decoration: none;
+    }
+
+    .schedule_table {
+      border-right-width: 0px;
+      border-bottom-width: 0px;
+      border-left-width: 1px;
+      border-top-width: 1px;
+      border-style: solid;
+      border-color: #000000;
+    }
+
+    .top-border {
+      border-right-width: 0px;
+      border-bottom-width: 0px;
+      border-left-width: 0px;
+      border-top-width: 1px;
+      border-style: solid;
+      border-color: #3B5998;
+    }
+
+    .schedule {
+      color: #000000;
+      border-right-width: 1px;
+      border-bottom-width: 1px;
+      border-left-width: 0px;
+      border-top-width: 0px;
+      border-style: solid;
+      border-color: #000000;
+      font-Family: Tahoma, Arial, Helvetica, sans-serif;
+      font-size: 11px;
+      font-weight: none;
+      text-decoration: none;
+    }
+
+    .border-td {
+      color: #000000;
+      border-right-width: 1px;
+      border-bottom-width: 1px;
+      border-left-width: 1px;
+      border-top-width: 1px;
+      border-style: solid;
+      border-color: #3B5998;
+      font-Family: Tahoma, Arial, Helvetica, sans-serif;
+      font-size: 11px;
+      font-weight: none;
+      text-decoration: none;
+    }
+
+    td {
+      color: #000000;
+      border: 0;
+      font-Family: Tahoma, Arial, Helvetica, sans-serif;
+      font-size: 11px;
+      font-weight: none;
+      text-decoration: none;
+    }
+
+    .inputtext {
+      border: double;
+      border-width: 1;
+      border-color: #555555;
+      background-color: #D9DFEA;
+      font-size: 11px;
+      color: #000000;
+      font-Family: Tahoma, Arial, Helvetica, sans-serif;
+    }
+
+    .inputsubmit {
+      border-style: solid;
+      border-top-width: 1px;
+      border-bottom-width: 2px;
+      border-right-width: 2px;
+      border-left-width: 1px;
+      border-top-color: #D9DFEA;
+      border-bottom-color: #3B5998;
+      border-right-color: #3B5998;
+      border-left-color: #D9DFEA;
+      background-color: #538ADC;
+      font-family: Tahoma, arial;
+      font-size: 11px;
+      color: #FFFFFF;
+      font-weight: none;
+    }
+
+    < !-- #8EA7C5 - blue #D9DFEA - grey 59 89 152 (#3B5998) 217 223 234 (#D9DFEA) 83 138 220 - link normal (#538ADC) 119 201 243 - link down (#77C9F3) -->
+  </style>
+</head>
+
+<body>
   <center>
-  <p><a href="about.php?PHPSESSID=df5154e5899f1296c2dceec9f0f542a0">about</a>&nbsp;&nbsp;
-  <a href="contact.php?PHPSESSID=df5154e5899f1296c2dceec9f0f542a0">contact</a>&nbsp;&nbsp;
-  <a href="faq.php?PHPSESSID=df5154e5899f1296c2dceec9f0f542a0">faq</a>&nbsp;&nbsp;
-  <a href="terms.php?PHPSESSID=df5154e5899f1296c2dceec9f0f542a0">terms</a>&nbsp;&nbsp;
-  <a href="policy.php?PHPSESSID=df5154e5899f1296c2dceec9f0f542a0">privacy</a>
-  <br>a Mark Zuckerberg production
-  <br>Thefacebook &copy; 2004
-  </center><br>
-  </td></tr></table>
+    <table class="bordertable" cellspacing="0" cellpadding="0" border="0" width="700">
+      <tr>
+        <td>
+          <table class="bottomborder" cellspacing="0" cellpadding="0" border="0" width="100%">
+            <tr>
+              <td width="350" bgcolor="#3B5998">
+                <img src="images/logo-left.jpg">
+              </td>
+              <td>
+                <table cellspacing="0" cellpadding="0" border="0" width="100%">
+                  <tr>
+                    <td>
+                      <table cellspacing="0" cellpadding="0" border="0" width="100%">
+                        <tr>
+                          <td><a href="index.php?PHPSESSID=df5154e5899f1296c2dceec9f0f542a0"><img
+                                src="images/logo-right.jpg" border="0"></a></td>
+                          <td width="100%" bgcolor="#3B5998">&nbsp;</td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <table cellspacing="0" cellpadding="4" border="0" width="100%">
+                        <tr height="21">
+                          <!--<td bgcolor=#3B5998 width=10>&nbsp;</td>-->
+                          <td bgcolor="#3B5998" valign="bottom">&nbsp;<a class="menu"
+                              href="login.php?PHPSESSID=df5154e5899f1296c2dceec9f0f542a0">login</a></td>
+                          <td bgcolor="#3B5998" valign="bottom">&nbsp;<a class="menu"
+                              href="register.php?PHPSESSID=df5154e5899f1296c2dceec9f0f542a0">register</a></td>
+                          <td bgcolor="#3B5998" valign="bottom">&nbsp;<a class="menu"
+                              href="about.php?PHPSESSID=df5154e5899f1296c2dceec9f0f542a0">about</a></td>
+                          <td bgcolor="#3B5998" width="100%">&nbsp;</td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <table cellspacing="0" cellpadding="2" border="0" width="100%">
+            <tr>
+              <td valign="top">
+                <table cellspacing="0" cellpadding="0" border="0" width="105">
+                  <tr>
+                    <td>
+                      <table class="dashedtable" cellspacing="0" cellpadding="2" width="100%">
+                        <tr>
+                          <td align="right">
+                            <p>
+                            <form method="post" action="login.php"><input type="hidden" name="PHPSESSID"
+                                value="df5154e5899f1296c2dceec9f0f542a0" />
+                              Email:<br>
+                              <input type="text" class="inputtext" name="email" size="20"><br>
+                              Password:<br>
+                              <input type="password" class="inputtext" name="pass" size="20"><br>
+                              <center><input type="button" class="inputsubmit" value="register"
+                                  onclick="javascript:document.location='register.php';">
+                                &nbsp;<input type="submit" class="inputsubmit" value="login"></center>
+                            </form>
+                            <!--<br>-->
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+              <td width="595" valign="top">
+                <table class="bordertable" cellspacing="0" cellpadding="0" border="1" width="100%">
+                  <tr>
+                    <td>
+
+                      <table cellspacing="0" cellpadding="2" border="0" width="100%">
+                        <tr>
+                          <td class="white" bgcolor="#3B5998">Welcome to Thefacebook!</td>
+                        </tr>
+                      </table>
+                      <center>
+                        <p class="title">[ Welcome to Thefacebook ]<br>&nbsp;
+                        <table cellspacing="0" cellpadding="0" border="0" width="95%">
+                          <tr>
+                            <td class="larger">Thefacebook is an online directory that connects people through social
+                              networks at colleges.<p>We have opened up Thefacebook for popular consumption at
+                                <b>Harvard
+                                  University</b>.
+                              <p>You can use Thefacebook to:<br>&nbsp;<b>&#8226;</b>&nbsp; Search for people at your
+                                school<br>&nbsp;<b>&#8226;</b>&nbsp; Find out who are in your
+                                classes<br>&nbsp;<b>&#8226;</b>&nbsp; Look up your friends'
+                                friends<br>&nbsp;<b>&#8226;</b>&nbsp; See a visualization of your social network
+                              <p>To get started, click below to register. If you have already registered, you can log
+                                in.
+                                <center><input class="inputsubmit" type="button" value="Register"
+                                    onclick="javascript:document.location=&quot;register.php&quot;;">&nbsp;&nbsp;<input
+                                    class="inputsubmit" type="button" value=" Login "
+                                    onclick="javascript:document.location=&quot;login.php&quot;;"><br>&nbsp;
+                            </td>
+                          </tr>
+                        </table>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+          <center>
+            <p><a href="about.php?PHPSESSID=df5154e5899f1296c2dceec9f0f542a0">about</a>&nbsp;&nbsp;
+              <a href="contact.php?PHPSESSID=df5154e5899f1296c2dceec9f0f542a0">contact</a>&nbsp;&nbsp;
+              <a href="faq.php?PHPSESSID=df5154e5899f1296c2dceec9f0f542a0">faq</a>&nbsp;&nbsp;
+              <a href="terms.php?PHPSESSID=df5154e5899f1296c2dceec9f0f542a0">terms</a>&nbsp;&nbsp;
+              <a href="policy.php?PHPSESSID=df5154e5899f1296c2dceec9f0f542a0">privacy</a>
+              <br>a Mark Zuckerberg production
+              <br>Thefacebook &copy; 2004
+          </center><br>
+        </td>
+      </tr>
+    </table>
+</body>
+</html>
