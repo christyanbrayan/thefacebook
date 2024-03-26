@@ -8,128 +8,84 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <center>
-    <table class="bordertable" cellspacing="0" cellpadding="0" border="0" width="700">
-      <tr>
-        <td>
-          <table class="bottomborder" cellspacing="0" cellpadding="0" border="0" width="100%">
-            <tr>
-              <td width="350" bgcolor="#3B5998">
-                <img src="images/logo-left.jpg">
-              </td>
-              <td>
-                <table cellspacing="0" cellpadding="0" border="0" width="100%">
-                  <tr>
-                    <td>
-                      <table cellspacing="0" cellpadding="0" border="0" width="100%">
-                        <tr>
-                          <td><a href="index.php?PHPSESSID=df5154e5899f1296c2dceec9f0f542a0"><img
-                                src="images/logo-right.jpg" border="0"></a></td>
-                          <td width="100%" bgcolor="#3B5998">&nbsp;</td>
-                        </tr>
-                      </table>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <table cellspacing="0" cellpadding="4" border="0" width="100%">
-                        <tr height="21">
-                          <!--<td bgcolor=#3B5998 width=10>&nbsp;</td>-->
-                          <td bgcolor="#3B5998" valign="bottom">&nbsp;<a class="menu"
-                              href="login.php?PHPSESSID=df5154e5899f1296c2dceec9f0f542a0">login</a></td>
-                          <td bgcolor="#3B5998" valign="bottom">&nbsp;<a class="menu"
-                              href="register.php?PHPSESSID=df5154e5899f1296c2dceec9f0f542a0">register</a></td>
-                          <td bgcolor="#3B5998" valign="bottom">&nbsp;<a class="menu"
-                              href="about.php?PHPSESSID=df5154e5899f1296c2dceec9f0f542a0">about</a></td>
-                          <td bgcolor="#3B5998" width="100%">&nbsp;</td>
-                        </tr>
-                      </table>
-                    </td>
-                  </tr>
-                </table>
-              </td>
-            </tr>
-          </table>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <table cellspacing="0" cellpadding="2" border="0" width="100%">
-            <tr>
-              <td valign="top">
-                <table cellspacing="0" cellpadding="0" border="0" width="105">
-                  <tr>
-                    <td>
-                      <table class="dashedtable" cellspacing="0" cellpadding="2" width="100%">
-                        <tr>
-                          <td align="right">
-                            <p>
-                            <form method="post" action="login.php"><input type="hidden" name="PHPSESSID"
-                                value="df5154e5899f1296c2dceec9f0f542a0" />
-                              Email:<br>
-                              <input type="text" class="inputtext" name="email" size="20"><br>
-                              Password:<br>
-                              <input type="password" class="inputtext" name="pass" size="20"><br>
-                              <center><input type="button" class="inputsubmit" value="register"
-                                  onclick="javascript:document.location='register.php';">
-                                &nbsp;<input type="submit" class="inputsubmit" value="login"></center>
-                            </form>
-                            <!--<br>-->
-                          </td>
-                        </tr>
-                      </table>
-                    </td>
-                  </tr>
-                </table>
-              </td>
-              <td width="595" valign="top">
-                <table class="bordertable" cellspacing="0" cellpadding="0" border="1" width="100%">
-                  <tr>
-                    <td>
 
-                      <table cellspacing="0" cellpadding="2" border="0" width="100%">
-                        <tr>
-                          <td class="white" bgcolor="#3B5998">Welcome to Thefacebook!</td>
-                        </tr>
-                      </table>
-                      <center>
-                        <p class="title">[ Welcome to Thefacebook ]<br>&nbsp;
-                        <table cellspacing="0" cellpadding="0" border="0" width="95%">
-                          <tr>
-                            <td class="larger">Thefacebook is an online directory that connects people through social
-                              networks at colleges.<p>We have opened up Thefacebook for popular consumption at
-                                <b>Harvard
-                                  University</b>.
-                              <p>You can use Thefacebook to:<br>&nbsp;<b>&#8226;</b>&nbsp; Search for people at your
-                                school<br>&nbsp;<b>&#8226;</b>&nbsp; Find out who are in your
-                                classes<br>&nbsp;<b>&#8226;</b>&nbsp; Look up your friends'
-                                friends<br>&nbsp;<b>&#8226;</b>&nbsp; See a visualization of your social network
-                              <p>To get started, click below to register. If you have already registered, you can log
-                                in.
-                                <center><input class="inputsubmit" type="button" value="Register"
-                                    onclick="javascript:document.location=&quot;register.php&quot;;">&nbsp;&nbsp;<input
-                                    class="inputsubmit" type="button" value=" Login "
-                                    onclick="javascript:document.location=&quot;login.php&quot;;"><br>&nbsp;
-                            </td>
-                          </tr>
-                        </table>
-                    </td>
-                  </tr>
-                </table>
-              </td>
-            </tr>
-          </table>
-          <center>
-            <p><a href="about.php?PHPSESSID=df5154e5899f1296c2dceec9f0f542a0">about</a>&nbsp;&nbsp;
-              <a href="contact.php?PHPSESSID=df5154e5899f1296c2dceec9f0f542a0">contact</a>&nbsp;&nbsp;
-              <a href="faq.php?PHPSESSID=df5154e5899f1296c2dceec9f0f542a0">faq</a>&nbsp;&nbsp;
-              <a href="terms.php?PHPSESSID=df5154e5899f1296c2dceec9f0f542a0">terms</a>&nbsp;&nbsp;
-              <a href="policy.php?PHPSESSID=df5154e5899f1296c2dceec9f0f542a0">privacy</a>
-              <br>a Mark Zuckerberg production
-              <br>Thefacebook &copy; 2004
-          </center><br>
-        </td>
-      </tr>
-    </table>
+  <section id="home">
+
+    <header>
+      <img src="images/logo-left.jpg">
+      <div id="banner-right">
+        <img src="images/logo-right.jpg" alt="The Facebook">
+        <nav>
+          <a href="#">login</a>
+          <a href="#">register</a>
+          <a href="#">about</a>
+        </nav>
+      </div>
+    </header>
+
+    <aside>
+      <form>
+        <label for="">Email:</label>
+        <input type="email" name="" id="">
+
+        <label for="">Password:</label>
+        <input type="password" name="" id="">
+
+        <div id="buttons">
+          <button>register</button>
+          <button>login</button>
+        </div>
+      </form>
+    </aside>
+
+    <main>
+      <span id="title">
+        Welcome to Thefacebook!
+      </span>
+
+      <h1> [ Welcome to Thefacebook ] </h1>
+      <p>        
+        Thefacebook is an online directory that connects people through social networks at colleges.
+      </p>
+      <p>
+        We have opened up Thefacebook for popular consumption at Harvard University.
+      </p>
+      <p>
+        You can use Thefacebook to:
+        <ul>
+          <li>Search for people at your school</li>
+          <li>Find out who are in your classes</li>
+          <li>Look up your friends' friends</li>
+          <li>See a visualization of your social network</li>
+        </ul>
+      </p>
+      <p>
+        To get started, click below to register. If you have already registered, you can log in.
+      </p>
+
+      <div id="buttons">
+        <button>Register</button>
+        <button>Login</button>
+      </div>
+    </main>
+
+    <footer>
+      <nav>
+        <a href="#">about</a>
+        <a href="#">contact</a>
+        <a href="#">faq</a>
+        <a href="#">terms</a>
+        <a href="#">privacy</a>
+      </nav>
+      <p>
+        a Mark Zuckerberg production
+      </p>
+      <p>
+        Thefacebook &copy; 2004
+      </p>
+    </footer>
+
+  </section>
+
 </body>
 </html>
