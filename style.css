@@ -1,258 +1,105 @@
-.title {
-  color: #000000;
+* {
   font-Family: Tahoma, Arial, Helvetica, sans-serif;
-  font-size: 18px;
-  font-weight: bold;
-  text-decoration: none;
-}
-
-.larger {
-  color: #000000;
-  font-Family: Tahoma, Arial, Helvetica, sans-serif;
-  font-size: 13px;
-  font-weight: none;
-  text-decoration: none;
-}
-
-.larger-a {
-  /* color:#D19160; */
-  color: #538ADC;
-  font-Family: Tahoma, Arial, Helvetica, sans-serif;
-  font-size: 13px;
-  font-weight: none;
-  text-decoration: none;
-}
-
-.larger-a:hover {
-  /* color:#FF0000; */
-  color: #77C9F3;
-  font-Family: Tahoma, Arial, Helvetica, sans-serif;
-  font-size: 13px;
-  font-weight: none;
-  text-decoration: underline;
-}
-
-select {
-  font-family: Tahoma;
-  font-size: 11px;
-}
-
-.white {
-  color: #FFFFFF;
-  font-Family: Tahoma, Arial, Helvetica, sans-serif;
-  font-size: 12px;
-  font-weight: none;
-  text-decoration: none;
-}
-
-.blue {
-  color: #3B5998;
-  font-Family: Tahoma, Arial, Helvetica, sans-serif;
-  font-size: 12px;
-  font-weight: none;
-  text-decoration: none;
-}
-
-.red {
-  color: #FF0000;
-  font-Family: Tahoma, Arial, Helvetica, sans-serif;
-  font-size: 11px;
-  font-weight: none;
-  text-decoration: none;
-}
-
-.menu {
-  color: #FFFFFF;
-  font-Family: Tahoma, Arial, Helvetica, sans-serif;
-  font-size: 11px;
-  font-weight: none;
-  text-decoration: none;
-}
-
-.menu:hover {
-  color: #77C9F3;
-  font-Family: Tahoma, Arial, Helvetica, sans-serif;
-  font-size: 11px;
-  font-weight: none;
-  text-decoration: none;
-}
-
-.alternate {
-  color: #3B5998;
-  font-Family: Tahoma, Arial, Helvetica, sans-serif;
-  font-size: 11px;
-  font-weight: none;
-  text-decoration: none;
-}
-
-.alternate:hover {
-  color: #000000;
-  font-Family: Tahoma, Arial, Helvetica, sans-serif;
-  font-size: 11px;
-  font-weight: none;
-  text-decoration: underline;
+  box-sizing: border-box;
 }
 
 a {
-  /* color:#D19160; */
-  color: #538ADC;
-  font-Family: Tahoma, Arial, Helvetica, sans-serif;
+  all: unset;
+}
+
+section#home {
+  width: 700px;
+  border: 1px solid #3B5998;
+  margin: auto;
+}
+
+header {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  background-color: #3B5998;
+  color: #fff;
+  border-bottom: 1px solid #3B5998;
   font-size: 11px;
-  font-weight: none;
-  text-decoration: none;
 }
 
-a:hover {
-  /* color:#FF0000; */
-  color: #77C9F3;
-  font-Family: Tahoma, Arial, Helvetica, sans-serif;
-  font-size: 11px;
-  font-weight: none;
-  text-decoration: underline;
+header #banner-right {
+  margin: auto;
 }
 
-.bordertable {
-  border-width: 1px;
-  border-color: #3B5998;
-  border-style: solid;
+header #banner-right img {
+  padding-top: 0;
 }
 
-.dashedtable {
-  border-width: 1px;
-  border-color: #3B5998;
-  border-style: dashed;
+header #banner-right nav {
+  padding-left: 7px;
 }
 
-.bottomborder {
-  border-style: solid;
-  border-color: #3B5998;
-  border-top-width: 0px;
-  border-bottom-width: 1px;
-  border-right-width: 0px;
-  border-left-width: 0px;
+aside {
+  width: 173px;
+  margin: 2px;
+  padding: 2px;
+  float: left;
 }
 
-.one-column {
-  color: #000000;
-  font-Family: Tahoma, Arial, Helvetica, sans-serif;
-  font-size: 11px;
-  font-weight: none;
-  text-decoration: none;
-  border-style: solid;
-  border-color: #3B5998;
-  border-top-width: 1px;
-  border-bottom-width: 0px;
-  border-right-width: 1px;
-  border-left-width: 1px;
+aside form {
+  border: 1px dashed #3B5998;
+  padding: 2px;
 }
 
-.text {
-  font-Family: Serif;
-  font-size: 11px;
-  font-weight: none;
-  text-decoration: none;
+aside label {
+  float: right;
 }
 
-.td0 {
-  color: #000000;
-  background-color: #D9DFEA;
-  border: 0;
-  font-Family: Tahoma, Arial, Helvetica, sans-serif;
-  font-size: 11px;
-  font-weight: none;
-  text-decoration: none;
+aside input {
+  width: 100%;
 }
 
-.td1 {
-  color: #000000;
-  background-color: #86A1CE;
-  border: 0;
-  font-Family: Tahoma, Arial, Helvetica, sans-serif;
-  font-size: 11px;
-  font-weight: none;
-  text-decoration: none;
+#buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
 }
 
-.schedule_table {
-  border-right-width: 0px;
-  border-bottom-width: 0px;
-  border-left-width: 1px;
-  border-top-width: 1px;
-  border-style: solid;
-  border-color: #000000;
-}
-
-.top-border {
-  border-right-width: 0px;
-  border-bottom-width: 0px;
-  border-left-width: 0px;
-  border-top-width: 1px;
-  border-style: solid;
-  border-color: #3B5998;
-}
-
-.schedule {
-  color: #000000;
-  border-right-width: 1px;
-  border-bottom-width: 1px;
-  border-left-width: 0px;
-  border-top-width: 0px;
-  border-style: solid;
-  border-color: #000000;
-  font-Family: Tahoma, Arial, Helvetica, sans-serif;
-  font-size: 11px;
-  font-weight: none;
-  text-decoration: none;
-}
-
-.border-td {
-  color: #000000;
-  border-right-width: 1px;
-  border-bottom-width: 1px;
-  border-left-width: 1px;
-  border-top-width: 1px;
-  border-style: solid;
-  border-color: #3B5998;
-  font-Family: Tahoma, Arial, Helvetica, sans-serif;
-  font-size: 11px;
-  font-weight: none;
-  text-decoration: none;
-}
-
-td {
-  color: #000000;
-  border: 0;
-  font-Family: Tahoma, Arial, Helvetica, sans-serif;
-  font-size: 11px;
-  font-weight: none;
-  text-decoration: none;
-}
-
-.inputtext {
-  border: double;
-  border-width: 1;
-  border-color: #555555;
-  background-color: #D9DFEA;
-  font-size: 11px;
-  color: #000000;
-  font-Family: Tahoma, Arial, Helvetica, sans-serif;
-}
-
-.inputsubmit {
-  border-style: solid;
-  border-top-width: 1px;
-  border-bottom-width: 2px;
-  border-right-width: 2px;
-  border-left-width: 1px;
-  border-top-color: #D9DFEA;
-  border-bottom-color: #3B5998;
-  border-right-color: #3B5998;
-  border-left-color: #D9DFEA;
+#buttons button {
+  margin: auto;
+  text-align: center;
   background-color: #538ADC;
-  font-family: Tahoma, arial;
-  font-size: 11px;
-  color: #FFFFFF;
-  font-weight: none;
+  color: #fff;
+  border: none;
+  margin-bottom: 10px;
 }
 
-/* #8EA7C5 - blue #D9DFEA - grey 59 89 152 (#3B5998) 217 223 234 (#D9DFEA) 83 138 220 - link normal (#538ADC) 119 201 243 - link down (#77C9F3) */
+main {
+  width: 517px;
+  margin: 2px;
+  padding: 18px;
+  float: right;
+  border: 1px solid #3B5998;
+}
+
+main #title {
+  display: block;
+  width: 100%;
+  background-color: #3B5998;
+  color: #fff;
+  margin-top: -18px;
+  margin-left: -18px;
+  padding: 2px;
+}
+
+main h1 {
+  text-align: center;
+}
+
+main p {
+  text-align: justify;
+}
+
+footer {
+  clear: both;
+  text-align: center;
+  padding-top: 11px;
+  padding-bottom: 11px;
+}
